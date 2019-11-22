@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import setuptools
+import sandbox
 
 
 setuptools.setup(name='sandbox',
