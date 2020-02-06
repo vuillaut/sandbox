@@ -26,5 +26,5 @@ def pr_unblack_ghost():
 
 def testing_flake8():
     a =   4
-     b = 2
+    b = 2
     print(  a)
