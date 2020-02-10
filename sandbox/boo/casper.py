@@ -12,7 +12,7 @@ def pr_unblack_ghost():
     b = 3
     c = a + b
     print(c)
-    print( "ho no, this is .................line.............................. is so very long ")
+    print( "ho no, this is .................line.......................... is so very long ")
 
 
 def testing_flake8():
