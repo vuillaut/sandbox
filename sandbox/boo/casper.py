@@ -17,5 +17,5 @@ def pr_unblack_ghost():
 
 def testing_flake8():
     a = 4
-    print(" hallo this is a very long line with nothing interesting to say !  - {}".format(a))
+    print(" hallo this is a very long line with nothing interesting to say... {}".format(a))
     print(a)
