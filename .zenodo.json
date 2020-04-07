@@ -8,8 +8,9 @@
     "creators": [
         {
             "affiliation": "LAPP, IN2P3/CNRS", 
-            "name": "Thomas Vuume"
+            "name": "Thomas Vuaume"
         }
     ], 
-    "access_right": "open"
+    "access_right": "open",
+    "hardware": "GPU"
 }
