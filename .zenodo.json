@@ -1,25 +1,27 @@
 {
-    "description": "<p>Release to test zenodo sandbox</p>",
-    "license": "MIT",
-    "title": "vuillaut/sandbox: First version",
-    "version": "v0.1",
-    "upload_type": "software",
-    "publication_date": "2020-04-07",
+    "description": "<p>Release to test zenodo sandbox</p>", 
+    "license": "other-open", 
+    "title": "vuillaut/sandbox: First version", 
+    "version": "v0.1", 
+    "upload_type": "software", 
+    "publication_date": "2020-04-07", 
     "creators": [
         {
-            "affiliation": "LAPP, IN2P3/CNRS",
-            "name": "Tottoro"
+            "affiliation": "LAPP, IN2P3/CNRS", 
+            "name": "Thomas Vuillaume"
         }
-    ],
-    "access_right": "open",
+    ], 
+    "access_right": "open", 
     "related_identifiers": [
         {
-            "scheme": "url",
-            "identifier": "https://github.com/vuillaut/doesnotexist",
+            "scheme": "url", 
+            "identifier": "https://github.com/vuillaut/sandbox/tree/v0.1", 
             "relation": "isSupplementTo"
-        },
+        }, 
         {
-            "scheme": "doi",
+            "scheme": "doi", 
+            "identifier": "10.5072/zenodo.520573", 
+            "relation": "isVersionOf"
         }
     ]
 }
