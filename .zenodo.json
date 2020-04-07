@@ -12,16 +12,4 @@
         }
     ], 
     "access_right": "open", 
-    "related_identifiers": [
-        {
-            "scheme": "url", 
-            "identifier": "https://github.com/vuillaut/sandbox/tree/v0.1", 
-            "relation": "isSupplementTo"
-        }, 
-        {
-            "scheme": "doi", 
-            "identifier": "10.5072/zenodo.520573", 
-            "relation": "isVersionOf"
-        }
-    ]
 }
