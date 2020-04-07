@@ -1,0 +1,29 @@
+{
+    "description": "<p>Release to test zenodo sandbox</p>",
+    "license": "MIT",
+    "title": "vuillaut/sandbox: First version",
+    "version": "v0.1",
+    "upload_type": "software",
+    "publication_date": "2020-04-07",
+    "creators": [
+        {
+            "affiliation": "LAPP, IN2P3/CNRS",
+            "name": "Tottoro"
+        },
+        {
+            "affiliation": "annecy",
+            "name": "Kike"
+        }
+    ],
+    "access_right": "open",
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/vuillaut/doesnotexist",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "doi",
+        }
+    ]
+}
