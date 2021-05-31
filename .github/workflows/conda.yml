@@ -14,4 +14,6 @@ jobs:
             
     - name: activate base
       run: |
+       source $HOME/anaconda3/bin/activate
+       conda init
        conda activate base
