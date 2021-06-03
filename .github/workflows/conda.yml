@@ -1,14 +1,32 @@
 name: conda
 on: [push, pull_request]
 jobs:
-  build:
-    runs-on: macos-latest
+  build-linux:
+    runs-on: ubuntu-latest
     steps:
     - name: download and install conda
       run: |
        wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
        chmod u+x Anaconda3-2021.05-Linux-x86_64.sh
        bash Anaconda3-2021.05-Linux-x86_64.sh -b -p $HOME/anaconda3
+       source $HOME/anaconda3/bin/activate
+       conda init
+            
+    - name: activate base
+      run: |
+       source $HOME/anaconda3/bin/activate
+       conda init
+       conda activate base
+
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+    - name: download and install conda
+      run: |
+       wget https://repo.anaconda.com/archive/Anaconda3-2021.05-MacOSX-x86_64.sh
+       chmod u+x Anaconda3-2021.05-MacOSX-x86_64.sh
+       bash Anaconda3-2021.05-MacOSX-x86_64.sh -b -p $HOME/anaconda3
        source $HOME/anaconda3/bin/activate
        conda init
             
