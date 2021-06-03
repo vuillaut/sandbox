@@ -1,3 +1,10 @@
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+
 jobs:
   example-1:
     name: Ex1 (${{ matrix.python-version }}, ${{ matrix.os }})
@@ -14,7 +21,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Conda info
         shell: bash -l {0}
-        run: conda info
-      - name: Conda list
-        shell: pwsh
-        run: conda list
+        run: conda info; conda list;
+
