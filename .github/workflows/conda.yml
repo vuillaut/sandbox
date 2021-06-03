@@ -2,7 +2,7 @@ name: conda
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, macos-latest]
     steps:
     - name: download and install conda
       run: |
