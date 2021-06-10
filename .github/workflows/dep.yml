@@ -1,3 +1,6 @@
+name: dep_sandbox
+on: [push, pull_request]
+
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -10,8 +13,8 @@ jobs:
           sandbox:
             - 'sandbox/**'
 
-    # run only if 'backend' files were changed
+    # run only if 'sandbox' files were changed
     - name: sandbox tests
       if: steps.filter.outputs.sandbox == 'true'
-      run:
-      pytest sandbox
+      run: |
+        pytest sandbox
