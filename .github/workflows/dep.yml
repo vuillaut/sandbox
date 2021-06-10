@@ -1,0 +1,17 @@
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          sandbox:
+            - 'sandbox/**'
+
+    # run only if 'backend' files were changed
+    - name: sandbox tests
+      if: steps.filter.outputs.sandbox == 'true'
+      run:
+      pytest sandbox
