@@ -1,3 +1,6 @@
+name: dep_sandbox
+on: [push, pull_request]
+
 jobs:
   tests:
     runs-on: ubuntu-latest
