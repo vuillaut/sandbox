@@ -1,0 +1,31 @@
+name: complex_dep_sandbox
+on: [push, pull_request]
+
+jobs:
+  # JOB to run change detection
+  changes:
+    runs-on: ubuntu-latest
+    # Set job outputs to values from filter step
+    outputs:
+      sandbox: ${{ steps.filter.outputs.sandbox }}
+    steps:
+    # For pull requests it's not necessary to checkout the code
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          sandbox:
+            - 'sandbox/**'
+
+  # JOB to build and test backend code
+  sandbox:
+    needs: changes
+    if: ${{ needs.changes.outputs.sandbox == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      runs: |
+        conda install pytest
+        pytest sandbox
+
+
