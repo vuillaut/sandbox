@@ -1,31 +1,37 @@
 <!---  
-You are opening a pull request into lstmcpipe.
-Please read instructions below. You may leave this message, it will be commented out in your PR.
-
+You may leave this message, it will be commented out in your PR.
 - if you are requesting a new config to be processed, please use the New Prod Config template
 - if you are proposing changes to lstmcpipe library, please use the other config
-
 Delete the unrequired templates.
-
 --->
 
 <!---  
 New Prod Config template
-Add date and fill out the template
+Add date and fill the template
+Your Pull Request must include the following files placed in directory `production_configs/yyyymmdd_prod_id`:
+- lstmcpipe config file
+- lstchain config
+- readme.md
 ---> 
+---
+name: "[New Prod Config]"
+about: "Request new prod config"
+title: "[New Prod Config] "
+labels: "new_prod_config"
+---
 
-# YYYY-MM-DD
+# New Prod config
 
-# Short description of the config
+## YYYY-MM-DD
 
+## Short description of the config
 
-# Why this config is needed 
-
+## Why this config is needed 
 
 ~new_prod_config
 
 
-
+----
 <!---  
 New feature of bugfix config
 ---> 
