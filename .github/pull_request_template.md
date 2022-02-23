@@ -13,12 +13,6 @@ Your Pull Request must include the following files placed in directory `producti
 - lstchain config
 - readme.md
 ---> 
----
-name: "[New Prod Config]"
-about: "Request new prod config"
-title: "[New Prod Config] "
-labels: "new_prod_config"
----
 
 # New Prod config
 
