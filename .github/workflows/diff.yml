@@ -11,6 +11,6 @@ jobs:
       - name: diff
         run: | 
           CHANGED_FILES=$(git diff --name-only)
-          echo $CHANGED_FILES
+          for FILE in $CHANGED_FILES; do echo $FILE; cat $FILE; done
 
       
