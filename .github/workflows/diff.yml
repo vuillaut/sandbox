@@ -10,7 +10,7 @@ jobs:
           fetch-depth: 0
       - name: diff
         run: | 
-          echo "CHANGED_FILES=$(git diff --name-only)" >> $GITHUB_ENV
+          CHANGED_FILES=$(git diff --name-only)
           echo $CHANGED_FILES
 
       
