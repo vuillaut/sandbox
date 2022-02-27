@@ -4,11 +4,12 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-          with:
-            fetch-depth: 0
-        - run: | 
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: diff
+        run: | 
           echo "CHANGED_FILES=$(git diff --name-only" >> $GITHUB_ENV
           echo $CHANGED_FILES
 
