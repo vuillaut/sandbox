@@ -2,13 +2,12 @@
     "description": "<p>Release to test zenodo sandbox</p>", 
     "license": "other-open", 
     "title": "vuillaut/sandbox: First version", 
-    "version": "v0.1", 
     "upload_type": "software", 
     "publication_date": "2020-04-07", 
     "creators": [
         {
             "affiliation": "LAPP, IN2P3/CNRS", 
-            "name": "Thomas Vuaume"
+            "name": "Thomas Vuillaume"
         }
     ], 
     "access_right": "open"
