@@ -1,4 +1,4 @@
 # sandbox
 Testing playground
 
-sandbox zenodo  v0.2.6
+sandbox zenodo  v0.2.8
