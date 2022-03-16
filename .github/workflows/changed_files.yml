@@ -10,7 +10,8 @@ jobs:
       - name: Change file in directory
         run: |
           mkdir test_directory
-          echo "Changed" > test_directory/new.txt
+          mkdir test_directory/new_dir/
+          echo "Changed" > test_directory/new_dir/new.txt
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v9
@@ -23,5 +24,4 @@ jobs:
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
-          echo "In dir ${{ steps.verify-changed-files.outputs.changed_files }}/*.txt"
         # Outputs: "Changed files: new.txt test_directory/new.txt"
