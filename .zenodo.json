@@ -1,9 +1,9 @@
 {
-    "description": "<p>Release to test zenodo sandbox</p>", 
-    "license": "other-open", 
-    "title": "vuillaut/sandbox: First version", 
+    "description": "A sandbox repository", 
+    "license": "MIT", 
+    "title": "vuillaut/sandbox", 
     "upload_type": "software", 
-    "publication_date": "2020-04-07", 
+    "publication_date": "2022-03-20", 
     "creators": [
         {
             "affiliation": "LAPP, IN2P3/CNRS", 
