@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: check zenodo
         run: |
-          eossr-check-connection-zenodo --token $ZENODO_TOKEN --sandbox False -p .
+          eossr-check-connection-zenodo --token ${{ secrets.ZENODO_TOKEN }} --sandbox False -p .
