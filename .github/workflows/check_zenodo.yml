@@ -7,7 +7,9 @@ on:
 
 jobs:
   build:
-    runs-on: gitlab-registry.in2p3.fr/escape2020/wp3/eossr:v0.5
+    runs-on: ubuntu-latest
+    container:
+      image: gitlab-registry.in2p3.fr/escape2020/wp3/eossr:v0.5
     steps:
       - uses: actions/checkout@v2
       - name: check zenodo
