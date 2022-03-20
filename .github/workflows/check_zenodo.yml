@@ -1,0 +1,15 @@
+name: check zenodo
+
+on: 
+  push:
+    paths:
+      - .zenodo.json
+
+jobs:
+  build:
+    runs-on: gitlab-registry.in2p3.fr/escape2020/wp3/eossr:v0.5
+    steps:
+      - uses: actions/checkout@v2
+      - name: check zenodo
+        run: |
+          eossr-check-connection-zenodo --token $ZENODO_TOKEN --sandbox False -p .
