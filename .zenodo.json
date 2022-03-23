@@ -10,5 +10,10 @@
             "name": "Thomas Vuillaume"
         }
     ], 
-    "access_right": "open"
+    "access_right": "open",
+    "communities": [
+      {
+        "id": "escape2020"
+      }
+    ]
 }
