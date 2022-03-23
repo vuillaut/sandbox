@@ -1,5 +1,10 @@
 {
-    "description": "A sandbox repository", 
+    "description": "A sandbox repository",
+    "communities": [
+        {
+            "identifier": "escape2020"
+        }
+    ],
     "license": "MIT", 
     "title": "vuillaut/sandbox", 
     "upload_type": "software", 
@@ -10,10 +15,5 @@
             "name": "Thomas Vuillaume"
         }
     ], 
-    "access_right": "open",
-    "communities": [
-      {
-        "id": "peasecread21"
-      }
-    ]
+    "access_right": "open"
 }
